@@ -1,29 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ebook_reader/src/pages/home.dart';
+import 'package:flutter_ebook_reader/src/routes/router.dart';
 
 class App extends StatelessWidget {
+  final router = Router();
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Epub Reader',
       initialRoute: '/',
-      onGenerateRoute: _generateRoutes,
-    );
-  }
-
-  Route _generateRoutes(RouteSettings settings) {
-    if (settings.name == '/') {
-      return MaterialPageRoute(
-        builder: (BuildContext context) {
-          return HomePage();
-        },
-      );
-    }
-
-    return MaterialPageRoute(
-      builder: (BuildContext context) {
-        return HomePage();
-      },
+      onGenerateRoute: router.onGenerateRoute,
     );
   }
 }

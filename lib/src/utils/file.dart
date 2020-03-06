@@ -75,4 +75,12 @@ class FileUtils {
   static Directory removeDataDirectory(String path) {
     return Directory(path.split("Android")[0]);
   }
+
+  static String getFileName(FileSystemEntity file) {
+    final path = file.path;
+    final name = path.split('/').last.split('.');
+    name.removeLast();
+
+    return name.join('.');
+  }
 }
