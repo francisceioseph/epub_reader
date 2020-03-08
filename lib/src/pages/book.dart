@@ -17,25 +17,27 @@ class BookPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: FutureBuilder<EpubBook>(
-        future: EpubUtils.readEpubFile(file),
-        builder: (BuildContext context, AsyncSnapshot<EpubBook> bookSnap) {
-          if (!bookSnap.hasData) {
-            return LoadingIndicator();
-          }
+      body: SafeArea(
+        child: FutureBuilder<EpubBook>(
+          future: EpubUtils.readEpubFile(file),
+          builder: (BuildContext context, AsyncSnapshot<EpubBook> bookSnap) {
+            if (!bookSnap.hasData) {
+              return LoadingIndicator();
+            }
 
-          if (bookSnap.hasError) {
-            return ErrorIndicator(errorMessage: "Can't read book :(");
-          }
+            if (bookSnap.hasError) {
+              return ErrorIndicator(errorMessage: "Can't read book :(");
+            }
 
-          final book = bookSnap.data;
+            final book = bookSnap.data;
 
-          return Container(
-            child: EpubView(
-              book: book,
-            ),
-          );
-        },
+            return Container(
+              child: EpubView(
+                book: book,
+              ),
+            );
+          },
+        ),
       ),
     );
   }
