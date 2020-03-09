@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:epub/epub.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_ebook_reader/src/utils/epub.dart';
-import 'package:flutter_ebook_reader/src/widgets/epub_view.dart';
+import 'package:flutter_ebook_reader/src/widgets/epub_book_view.dart';
 import 'package:flutter_ebook_reader/src/widgets/error_indicator.dart';
 import 'package:flutter_ebook_reader/src/widgets/loading_indicator.dart';
 
@@ -35,7 +35,7 @@ class BookPage extends StatelessWidget {
 
             final book = bookSnap.data;
 
-            return EpubView(book: book);
+            return EpubBookView(book: book);
           },
         ),
       ),
