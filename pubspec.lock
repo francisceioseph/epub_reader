@@ -29,6 +29,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.5"
+  carousel_slider:
+    dependency: "direct main"
+    description:
+      name: carousel_slider
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.4.1"
   charcode:
     dependency: transitive
     description:
@@ -85,6 +92,20 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.0"
+  epub_view:
+    dependency: "direct main"
+    description:
+      name: epub_view
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.3.1"
+  equatable:
+    dependency: transitive
+    description:
+      name: equatable
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.1.1"
   flutter:
     dependency: "direct main"
     description: flutter
@@ -102,6 +123,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_widgets:
+    dependency: transitive
+    description:
+      name: flutter_widgets
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.1.11"
   html:
     dependency: transitive
     description:
@@ -270,4 +298,4 @@ packages:
     version: "3.5.0"
 sdks:
   dart: ">=2.4.0 <3.0.0"
-  flutter: ">=1.10.0 <2.0.0"
+  flutter: ">=1.12.13+hotfix.5 <2.0.0"

@@ -28,6 +28,8 @@ dependencies:
   permission_handler: ^3.1.0
   epub: ^2.0.0
   flutter_html: ^0.11.1
+  carousel_slider: ^1.4.1
+  epub_view:
 
 dev_dependencies:
   flutter_test:
@@ -55,17 +57,37 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
+  fonts:
+    - family: EB Garamond
+      fonts:
+        - asset: assets/fonts/Garamond/EBGaramond-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Garamond/EBGaramond-BoldItalic.ttf
+          weight: 700
+          style: italic
+        - asset: assets/fonts/Garamond/EBGaramond-ExtraBold.ttf
+          weight: 900
+        - asset: assets/fonts/Garamond/EBGaramond-ExtraBoldItalic.ttf
+          weight: 900
+          style: italic
+        - asset: assets/fonts/Garamond/EBGaramond-Medium.ttf
+          weight: 600
+        - asset: assets/fonts/Garamond/EBGaramond-MediumItalic.ttf
+          weight: 600
+          style: italic
+        - asset: assets/fonts/Garamond/EBGaramond-Regular.ttf
+        - asset: assets/fonts/Garamond/EBGaramond-Italic.ttf
+          style: italic
+        - asset: assets/fonts/Garamond/EBGaramond-SemiBold.ttf
+          weight: 400
+        - asset: assets/fonts/Garamond/EBGaramond-SemiBoldItalic.ttf
+          weight: 400
+          style: italic
+    # - family: Trajan Pro
+    #   fonts:
+    #     - asset: fonts/TrajanPro.ttf
+    #     - asset: fonts/TrajanPro_Bold.ttf
+    #       weight: 700
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
