@@ -19,7 +19,7 @@ class Router {
           final BookArguments arguments = settings.arguments;
 
           return BookPage(
-            file: arguments.file,
+            book: arguments.book,
           );
         },
       );

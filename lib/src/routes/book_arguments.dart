@@ -1,7 +1,7 @@
-import 'dart:io';
+import 'package:epub/epub.dart';
 
 class BookArguments {
-  final FileSystemEntity file;
+  final EpubBook book;
 
-  BookArguments(this.file);
+  BookArguments(this.book);
 }
