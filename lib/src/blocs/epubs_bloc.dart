@@ -26,7 +26,7 @@ class EpubsBloc {
     ) {
       return {
         ...books,
-        '${book.Title}': book,
+        '${book.Schema.Navigation.Head.Metadata.first.Content}': book,
       };
     }, <String, EpubBook>{});
   }
