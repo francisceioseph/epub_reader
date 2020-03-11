@@ -1,16 +1,20 @@
 # flutter_ebook_reader
 
-A new Flutter project.
+A simple epub reader made using Flutter (Android)
 
-## Getting Started
+## Tech
 
-This project is a starting point for a Flutter application.
+- BLoc Pattern
+- [Permission Handler](https://pub.dev/packages/permission_handler)
+- [Staggared Grid View](https://pub.dev/packages/flutter_staggered_grid_view)
+- [Epub Parser](https://pub.dev/packages/epub)
+- [RxDart](https://pub.dev/packages/rxdart)
+- [Flutter Html](https://pub.dev/packages/flutter_html)
+- [Carousel Slider](https://pub.dev/packages/carousel_slider)
+- [Flutter Launcher Icons](https://pub.dev/packages/flutter_launcher_icons)
 
-A few resources to get you started if this is your first Flutter project:
+## Screenshots
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+![Home Screen](./gh-images/p1.png)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Book Screen](./gh-images/p2.png)
