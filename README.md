@@ -1,4 +1,4 @@
-# flutter_ebook_reader
+# Epub Reader
 
 A simple epub reader made using Flutter (Android)
 
